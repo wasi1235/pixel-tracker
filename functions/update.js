@@ -1,7 +1,7 @@
 import { NhostClient } from "@nhost/nhost-js";
 
 const accessToken = process.env.NHOST_ADMIN_SECRET;
-const backendUrl = process.env.NHOST_BACKEND_URL;
+const backendUrl = process.env.NHOST_FUNCTIONS_URL;
 
 const nhost = new NhostClient({
   backendUrl: backendUrl,
