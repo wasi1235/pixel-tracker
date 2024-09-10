@@ -4,7 +4,8 @@ const accessToken = process.env.NHOST_ADMIN_SECRET;
 const backendUrl = process.env.NHOST_FUNCTIONS_URL;
 
 const nhost = new NhostClient({
-  backendUrl: backendUrl,
+  subdomain: 'cbjtshmtygktqnkidnja',
+  region: 'eu-central-1',
 });
 
 nhost.graphql.setAccessToken(accessToken);
